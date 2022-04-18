@@ -75,7 +75,7 @@ function addInsects() {
 
 function increaseScore() {
   score++;
-  if (score % 10) {
+  if (score % 5 === 0) {
     message.classList.add("visible");
     message.addEventListener("click", () =>
       message.classList.remove("visible")
